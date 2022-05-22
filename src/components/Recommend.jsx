@@ -116,7 +116,7 @@ const Section = styled.section`
     text-align: center;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
-    line-height: 3rem;
+    line-height: rem;
   }
   .packages {
     display: flex;
@@ -149,7 +149,7 @@ const Section = styled.section`
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
-      background-color: #ddc0e1c1;
+      background-color: #e2e4ef;
       border-radius: 1rem;
       transition: 0.3s ease-in-out;
       &:hover {
