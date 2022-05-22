@@ -13,6 +13,7 @@ function App() {
     <Hero />
     <Services />
     <Recommend />
+    <Testimonials />
 
 
   </>
