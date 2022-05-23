@@ -172,13 +172,31 @@ const Section = styled.section`
             padding: 0.2rem 0.4rem;
           }
         }
-        display:flex;
-        justify-content: space-between;
-      }
-      .distance{
         display: flex;
         justify-content: space-between;
       }
+      .distance {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  @media screen and (min-width: 280px) and (max-width: 768px) {
+    .packages {
+      ul {
+        li {
+          padding: 0 0.5rem;
+          font-size: 2vh;
+          padding-bottom: 1rem;
+        }
+        .active {
+          border-bottom-width: 0.3rem;
+        }
+      }
+    }
+    .destinations {
+      grid-template-columns: 1fr;
+      padding: 0;
     }
   }
 `;
