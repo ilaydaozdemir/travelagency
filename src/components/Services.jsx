@@ -58,6 +58,7 @@ const Section = styled.section`
   .service {
     display: flex;
     gap: 1rem;
+    flex-direction: column;
     padding: 2rem;
     background-color: aliceblue;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -66,10 +67,16 @@ const Section = styled.section`
       transform: translateX(0.4rem) translateY(-1rem);
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 0px;
     }
-    .icon{
-      img{
+    .icon {
+      img {
         height: 2.4rem;
       }
     }
+  }
+  @media screen and (min-width: 280px) and (max-width: 720px) {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  @media screen and (min-width: 720px) and (max-width: 1080) {
+    grid-template-columns: repeat(2, 1fr);
   }
 `;
